@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            padding:top;
+        }
+        .container{
+            width:300px;
+            border:3px solid;
+            text-align: center;
+            background-color:aqua;
+            color: salmon;
+         }
+         button
+         {
+            background-color:beige;
+            color:brown;
+            border: 10px;
+         }
+        .container >.one:hover~img{
+            transform: rotate(4000deg);
+            transition: all 5s ease-in-out;
+        } 
+         .container >.two:hover~img{
+            transform: rotate(4000deg);
+            transition: all 4s ease-in-out;
+        } 
+        .container >.three:hover~img{
+            transform:rotate(4000deg) ;
+            transition:all 3s ease-in-out ;
+        } 
+        .container >.four:hover~img{
+            transform:rotate(4000deg) ;
+            transition:all 2s ease-in-out ;
+        }
+         star{
+            margin-top: 200px;
+         }
+         img{
+            transform: translate(200px);
+            transform: translate(200px);
+            transform: translate(200px,200px);
+            transition: all 4s;
+            padding-top: 50px;
+    
+        } 
+         div {
+            border:2px solid;
+            width:200px;
+            height:200px;
+            display: inline-block;
+         }
+         img {
+            transform: scale(2);
+            transition: all 1s;
+         } 
+         img {
+            transform: rotate(2);
+            transition:all 1s;
+         } 
+         img {
+            transform: skew(2);
+            transition:all 1s;
+         } 
+         {
+            transform:translate(2);
+            transition:all 1s;
+         }
+         img.hover
+            {
+                transform: scale(2);
+            } 
+         img hover 
+              {
+                transform: rotate(2);
+              } 
+        img hover
+            {
+                transform: skew(2);
+            } 
+           img hover
+            {
+                transform:translate(2);
+            }
+</style>
+</head>
+<body>
+    <div class="container">
+        <button class="one">translate</button>
+        <button class="two">rotate</button>
+        <button class="three">skew</button>
+         <button class="four">scale</button><br>
+         <img src="../../../images/star img.jpg"  alt="" width="50px";
+        </div>
+        </body>
+        </html>
